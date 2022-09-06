@@ -6,7 +6,7 @@ import {
   Routes
 } from "react-router-dom";
 
-import './App.css';
+import './App.scss';
 import NavigationBar from './NavigationBar/NavigationBar';
 import CalculationController from './pages/Calculation/CalculationController';
 import MainPageController from './pages/MainPage/MainPageController';

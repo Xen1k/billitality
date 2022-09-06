@@ -4,9 +4,31 @@
     border-radius: 20px;
     padding: 20px;
     margin: 20px;
+
     .text-header {
         display: flex;
+        justify-content: flex-start;
         font-weight: bold;
         font-size: large;
+    }
+
+    .form {
+        &-label {
+            display: flex;
+            justify-content: flex-start;
+            color: var(--light-gray);
+            font-size: 13px;
+        }
+        &-input {
+            border-color: transparent;
+            display: flex;
+            width: 100%;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    }
+
+    .text-theme {
+        color: var(--theme);
     }
 }
