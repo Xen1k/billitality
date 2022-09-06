@@ -3,19 +3,22 @@ import PersonSpendingView from "./PersonSpendingView";
 
 
 
-interface IPersonSpending {
+export interface IPersonSpending {
     name: string;
-    spendingList: number[];
+    spendingList: { value: number, id: number }[];
 }
 
 const PersonSpendingController = (): JSX.Element => {
 
-    const [personSpending, setPersonSpending] = useState<IPersonSpending>({ name: '', spendingList: [0] });
+    const [personSpending, setPersonSpending] = useState<IPersonSpending>({ name: '', spendingList: [{ value: 0, id: 0 }] });
 
 
-    const AddSpend = (): void => setPersonSpending({ ...personSpending, spendingList: [...personSpending.spendingList, 0] })
+    const addSpend = (): void => setPersonSpending({
+        ...personSpending,
+        spendingList: [...personSpending.spendingList, { value: 0, id: personSpending.spendingList.length }]
+    })
 
-    return <PersonSpendingView />
+    return <PersonSpendingView addSpend={addSpend} personSpendingData={personSpending} />
 }
 
 export default PersonSpendingController;
