@@ -1,6 +1,6 @@
 :root {
-  --light-gray: rgb(184, 184, 184); 
-  --theme: rgb(220, 44, 44); 
+  --light-gray: rgb(184, 184, 184);
+  --theme: #E61C5D;
 }
 
 .app {
@@ -9,6 +9,5 @@
 }
 
 .shadow {
-  box-shadow: 3px 3px 3px 3px darkgrey;
+  box-shadow: 0px 0px 2.5px 2.5px darkgrey;
 }
-

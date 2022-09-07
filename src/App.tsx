@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 
 import './App.scss';
-import NavigationBar from './NavigationBar/NavigationBar';
+import NavigationBar from './components/NavigationBar/NavigationBar';
 import CalculationController from './pages/Calculation/CalculationController';
 import MainPageController from './pages/MainPage/MainPageController';
 
