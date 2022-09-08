@@ -11,3 +11,18 @@
 .shadow {
   box-shadow: 0px 0px 2.5px 2.5px darkgrey;
 }
+
+
+// Scrollbar
+body::-webkit-scrollbar {
+  width: 3px;
+}
+
+body::-webkit-scrollbar-track {
+  display: none;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--theme);
+  border-radius: 10px;
+}

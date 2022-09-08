@@ -14,7 +14,6 @@ const PersonSpendingController = (): JSX.Element => {
 
     const [personSpending, setPersonSpending] = useState<IPersonSpending>({ name: '', spendingList: [{ value: 0, id: 0 }] });
 
-
     const addSpend = (): void => setPersonSpending({
         ...personSpending,
         spendingList: [...personSpending.spendingList, { value: 0, id: personSpending.spendingList.length }]
@@ -34,10 +33,13 @@ const PersonSpendingController = (): JSX.Element => {
         });
     }
 
+  
+    
     return <PersonSpendingView
         addSpend={addSpend}
         setSpend={setSpend}
         setName={setName}
+   
         personSpendingData={personSpending}
     />
 }
