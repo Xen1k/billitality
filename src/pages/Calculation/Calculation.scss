@@ -15,4 +15,17 @@
         flex-direction: row;
         flex-flow: row wrap;
     }
+
+    .submit-button {
+        background-color: var(--theme) !important;
+        border: none;
+
+        &:hover {
+            background-color: var(--light-gray) !important;
+        }
+
+        &:active {
+            background-color: var(--theme) !important;
+        }
+    }
 }
